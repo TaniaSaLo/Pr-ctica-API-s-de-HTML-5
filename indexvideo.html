@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproductor de vídeo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cssvideo.css" type="text/css">
+  
+</head>
+<body>
+  <script src="indexvideo.js" type="text/javascript"></script>
+  <div class="container">
+    <h1>Reproductor de vídeo</h1>
+    <input id= "seleccionar" type="file" onchange="loadVideo()">
+    <div class="loading" style="display: none;">Cargando...</div>
+    <video id="videoPlayer" controls></video>
+    <div class="controls">
+      
+        <button onclick="document.getElementById('videoPlayer').play()">Iniciar</button>
+        <button onclick="document.getElementById('videoPlayer').pause()">Pausar</button>
+        <button onclick="document.getElementById('videoPlayer').volume += 0.1">+ Volumen</button>
+        <button onclick="document.getElementById('videoPlayer').volume -= 0.1">- Volumen</button>
+        
+      </div>
+
+    
+  </div>
+</body>
+</html>
